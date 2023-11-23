@@ -10,7 +10,7 @@
                     </div>
                    
                 </div>
-                <div class="col-4 tien m-0 p-0">
+                <!-- <div class="col-4 tien m-0 p-0">
                     <div class="d-flex align-items-center st1border" >
                         <h3 class="font-weight-semi-bold ">Doanh Thu Trong Tháng <br/>{{formattedGia(this.doanhthu.tongdoanhthutrongthang)}}</h3>
                     </div>
@@ -19,7 +19,7 @@
                     <div class="d-flex align-items-center st1border" >
                         <h3 class="font-weight-semi-bold ">Doanh Thu Trong Ngày <br/> {{formattedGia(this.doanhthu.tongdoanhthutrongngay)}}</h3>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 

@@ -1,7 +1,7 @@
 
 
 <template>
-    <div class="row p-4 text-success text-left">
+    <div class="row p-4 pb-0 text-success text-left">
             <h3 class="col-4">Chi tiết hoá đơn</h3>
             <div class="hieuchinh col-6 text-success">
                        <!-- <router-link id="route-link" style="text-decoration: none; color: #2b7778;"
@@ -60,9 +60,9 @@
                   <hr>
                       </div>
                       <div class="col-md-12">
-                        <div class="row thongtinsanpham">    
-                <div class="shadow p-1 mb-5 bg-body rounded col-12">
-                    <div class="row m-4 " v-if="this.dondathang">
+                        <div class="row thongtinsanpham m-0 p-3">    
+                <div class="shadow p-3 mb-3 bg-body rounded col-12">
+                    <div class="row " v-if="this.dondathang">
                         <div class="col-md-12 text-success">
                             <h5> <span><i class="fa-solid fa-file-invoice"></i></span> Tổng Tiền Đơn Hàng</h5>
                             <hr>
@@ -106,10 +106,10 @@
                         </div>
                     </div>
                 </div>
-        <div class="col-12">
+        <div class="col-12 p-0">
               <div>
-                <div class="shadow p-2 mb-5 bg-body rounded">
-                    <div class="row p-4 " v-if="this.user">
+                <div class="shadow p-3 mb-3 bg-body rounded col-12">
+                    <div class="row" v-if="this.user">
                         <div class="col-md-12 text-success">
                             <h5> <span><i class="fa-solid fa-location-dot"></i></span> Thông Tin Đơn Hàng</h5>
                             <hr>

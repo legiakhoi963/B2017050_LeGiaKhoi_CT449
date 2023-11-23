@@ -10,7 +10,7 @@
   <div class="row m-0 p-0">
       <div class="col-6 mt-3 donhang">
         <div class="shadow p-3 rounded bg-body">
-          <div class="col-md-12 text-success">
+          <div class="col-md-12 p-3 text-success">
                           <h5> <span> <i class="fa fa-shipping-fast  "></i></span> {{this.tieude}}</h5>
                           <hr>
                       </div>

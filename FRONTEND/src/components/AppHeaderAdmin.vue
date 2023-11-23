@@ -123,7 +123,7 @@
         </ul>
       </div>
 
-     <ul class="navbar-nav" id="nguoidung" v-if="this.admin && session_admin!=null">
+     <ul class="navbar-nav m-0" id="nguoidung" v-if="this.admin && session_admin!=null">
           <li class="nav-item dropdown btn btn-warning m-2 p-0 danhsachnguoidung">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="dropdownMenuButton1" aria-expanded="false">
           {{this.admin.hoten}}

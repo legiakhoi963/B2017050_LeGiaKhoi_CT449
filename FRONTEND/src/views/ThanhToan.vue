@@ -2,11 +2,11 @@
     <div>
       <AppHeader :session_user="session_user" />
       <main>
-        <form class="row m-4" @submit.prevent="submitthanhtoan">
-            <div class="col-8 mt-3">
+        <form class="row m-0 p-0" @submit.prevent="submitthanhtoan">
+            <div class="col-8 m-0 p-0">
                   <!--   <div class="shadow p-3 mb-5 bg-body rounded">
              
-                    <div class="row p-4 " v-if="this.user">
+                    <div class="row p-4 pt-0" v-if="this.user">
                         <div class="col-md-12 text-success">
                             <h5> <span><i class="fa-solid fa-location-dot"></i></span> Thông Tin Nhận Hàng</h5>
                             <hr>
@@ -95,10 +95,10 @@
                 </div>
                 <!-- ===================================== END THONG TIN CHI TIẾT ĐON HÀNG ============================================== -->
             </div>
-            <div class="col-4 mt-3">
+            <div class="col-4 m-0 pt-0 ps-3 pe-0">
               <div>
-                <div class="shadow p-3 mb-5 bg-body rounded">
-                    <div class="row p-4 " v-if="this.user">
+                <div class="shadow p-3 mb-3 bg-body rounded">
+                    <div class="row p-4 pt-0" v-if="this.user">
                         <div class="col-md-12 text-success">
                             <h5> <span><i class="fa-solid fa-location-dot"></i></span> Thông Tin Nhận Hàng</h5>
                             <hr>
@@ -139,8 +139,8 @@
                     </div>
                 </div>
               </div>
-                <div class="shadow p-3 mb-5 bg-body rounded">
-                    <div class="row m-4 ">
+                <div class="shadow p-3 mb-3 bg-body rounded">
+                    <div class="row m-2 ">
                         <div class="col-md-12 text-success">
                             <h5> <span><i class="fa-solid fa-file-invoice"></i></span> Chi tiết thanh toán</h5>
                             <hr>

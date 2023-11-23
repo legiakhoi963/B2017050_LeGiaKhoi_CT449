@@ -83,7 +83,7 @@
            class="nav-link"
         ><i class="fa fa-cart-shopping icon-cart"></i>
         </router-link>
-      <ul class="navbar-nav" id="nguoidung" v-if="this.user!=null && session_user!=null && session_user.id!=null">
+      <ul class="navbar-nav m-0" id="nguoidung" v-if="this.user!=null && session_user!=null && session_user.id!=null">
         <li class="nav-item dropdown danhsachnguoidung btn btn-warning m-2 p-0">
         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="dropdownMenuButton1" aria-expanded="false">
           {{this.user.hoten}}

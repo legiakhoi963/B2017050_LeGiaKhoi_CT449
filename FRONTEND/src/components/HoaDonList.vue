@@ -12,7 +12,7 @@
                         </thead>
                         <tbody>
                           <tr v-for="(dathang, index) in paginatedList" :key="dathang._id" :class="{ active: (((this.currentPage - 1) * this.itemsPerPage) + index) === activeIndex }" @click="updateActiveIndex(index)">
-                            <td class=" pt-3" style="background-color: #8eb9be" v-if="(((this.currentPage - 1) * this.itemsPerPage)+index) == activeIndex">
+                            <td class=" pt-3" style="background-color: #adb5bd" v-if="(((this.currentPage - 1) * this.itemsPerPage)+index) == activeIndex">
                                     <div class="col p-0">
                                       {{dathang.tenkhachhang}}
                                     </div>
@@ -22,7 +22,7 @@
                                       {{dathang.tenkhachhang}}
                                     </div>
                                 </td>    
-                            <td class=" pt-3" style="background-color: #8eb9be" v-if="(((this.currentPage - 1) * this.itemsPerPage)+index) == activeIndex">
+                            <td class=" pt-3" style="background-color: #adb5bd" v-if="(((this.currentPage - 1) * this.itemsPerPage)+index) == activeIndex">
                                     <div class="col p-0">
                                       {{dathang.ngaydat}}
                                     </div>
@@ -32,7 +32,7 @@
                                       {{dathang.ngaydat}}
                                     </div>
                                 </td>
-                                <td class="pt-3"  v-if="(((this.currentPage - 1) * this.itemsPerPage)+index) == activeIndex" style="background-color: #8eb9be"> 
+                                <td class="pt-3"  v-if="(((this.currentPage - 1) * this.itemsPerPage)+index) == activeIndex" style="background-color: #adb5bd"> 
                                   <div class="col" v-if="dathang.tinhtrang=='Chờ xác nhận'">
                                     {{dathang.ngaygiao}} <br/> (Dự Kiến)
                                   </div>
@@ -49,17 +49,17 @@
                                   </div>
                                 </td>
                                 <!-- tang giam sl -->
-                                <td class="pt-3" v-if="(((this.currentPage - 1) * this.itemsPerPage)+index) == activeIndex" style="background-color: #8eb9be">
+                                <td class="pt-3" v-if="(((this.currentPage - 1) * this.itemsPerPage)+index) == activeIndex" style="background-color: #adb5bd">
                                   {{formattedGia(dathang.tongtien)}}
                                 </td>
                                 <td class="pt-3" v-else>
                                   {{formattedGia(dathang.tongtien)}}
                                 </td>
                                 <!-- tong tien -->
-                                <td class=" pt-3 text-danger" v-if="(((this.currentPage - 1) * this.itemsPerPage)+index) == activeIndex && dathang.tinhtrang=='Đã huỷ'" style="background-color: #8eb9be">
+                                <td class=" pt-3 text-danger" v-if="(((this.currentPage - 1) * this.itemsPerPage)+index) == activeIndex && dathang.tinhtrang=='Đã huỷ'" style="background-color: #adb5bd">
                                   {{dathang.tinhtrang}}
                                 </td>
-                                <td class=" pt-3" v-else-if="(((this.currentPage - 1) * this.itemsPerPage)+index) == activeIndex && dathang.tinhtrang!='Đã huỷ'" style="background-color: #8eb9be">
+                                <td class=" pt-3" v-else-if="(((this.currentPage - 1) * this.itemsPerPage)+index) == activeIndex && dathang.tinhtrang!='Đã huỷ'" style="background-color: #adb5bd">
                                   {{dathang.tinhtrang}}
                                 </td>
                                 <td class=" pt-3" v-else-if="dathang.tinhtrang!='Đã huỷ'">
@@ -150,7 +150,7 @@
       cursor: pointer;
   }
   .table .active {
-    background-color: #8eb9be !important;
+    background-color: #adb5bd !important;
 }
 
   </style>

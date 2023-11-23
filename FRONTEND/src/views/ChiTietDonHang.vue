@@ -3,8 +3,8 @@
       <AppHeader :session_user="session_user" />
       <main>
 
-  <div class="row thongtinsanpham">    
-    <div class="col-8 mt-3 ">
+  <div class="row m-0 p-0 thongtinsanpham">    
+    <div class="col-8 col-8 m-0 p-0">
           <div class="shadow mb-2 p-3 bg-body rounded">
             <div class="col-md-12 text-success">
                             <h5> <span><i class="fa-solid fa-cart-shopping"></i></span> Thông tin Sản Phẩm Đặt Hàng</h5>
@@ -60,57 +60,12 @@
                         </tfoot>
                     </table>
                 </div>
-                <div class="shadow p-3 mb-5 bg-body rounded col-8">
-                    <div class="row m-4 " v-if="this.dondathang">
-                        <div class="col-md-12 text-success">
-                            <h5> <span><i class="fa-solid fa-file-invoice"></i></span> Tổng Tiền Đơn Hàng</h5>
-                            <hr>
-                        </div>
-                        <div class="col-md-12 fs-6">
-                            <div class="row">
-                                <div class="col-9 float-sm-start">
-                                    <b>Tổng tiền hàng: </b>
-                                </div>
-                                <div class="col-3 float-sm-end">
-                                    <p><span id="tienhang">{{formattedGia(this.tongsotien)}} </span></p>
-                                </div>
-                                <div class="col-9 float-sm-start">
-                                    <b>Phí vận chuyển: </b>
-                                </div>
-                                <div class="col-3 float-sm-end">
-                                    <p id="phiship">{{formattedGia(this.dondathang.phigiao)}}</p>
-                                </div>
-                                <div class="col-9 float-sm-start">
-                                    <b>Phí giảm giá: </b>
-                                </div>
-                                <div class="col-3 float-sm-end">
-                                    <p>{{formattedGia(this.dondathang.phigiamgia)}}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <hr>
-                        </div>
-                        <div class="row">
-                            <div class="col-9 float-sm-start mb-3">
-                              <h5> <b>Tổng Thanh toán: </b></h5>
-                               
-                            </div>
-                            <div class="col-3 float-sm-end text-danger mb-3">
-                               
-                                <h5><span id="tongtien">{{formattedGia(this.dondathang.tongtien)}}</span></h5>
-
-                            </div>
-                     
-                        </div>
-                    </div>
-                </div>
             </div>
             
-            <div class="col-4 mt-3">
+            <div class="col-4 m-0 pt-0 ps-3 pe-0">
               <div>
-                <div class="shadow p-3 mb-5 bg-body rounded">
-                    <div class="row p-4 " v-if="this.user">
+                <div class="shadow p-3 mb-3 bg-body rounded">
+                    <div class="row p-4 pt-0" v-if="this.user">
                         <div class="col-md-12 text-success">
                             <h5> <span><i class="fa-solid fa-location-dot"></i></span> Thông Tin Đơn Hàng</h5>
                             <hr>
@@ -153,6 +108,52 @@
                           </b>
                          {{this.dondathang.tinhtrang}}
                         
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shadow p-3 mb-3 bg-body rounded">
+                    <div class="row m-2" v-if="this.dondathang">
+                        <div class="col-md-12 text-success">
+                            <h5> <span><i class="fa-solid fa-file-invoice"></i></span> Tổng Tiền Đơn Hàng</h5>
+                            <hr>
+                        </div>
+                        <div class="col-md-12 fs-6">
+                            <div class="row">
+                                <div class="col-9 float-sm-start">
+                                    <b>Tổng tiền hàng: </b>
+                                </div>
+                                <div class="col-3 float-sm-end">
+                                    <p><span id="tienhang">{{formattedGia(this.tongsotien)}} </span></p>
+                                </div>
+                                <div class="col-9 float-sm-start">
+                                    <b>Phí vận chuyển: </b>
+                                </div>
+                                <div class="col-3 float-sm-end">
+                                    <p id="phiship">{{formattedGia(this.dondathang.phigiao)}}</p>
+                                </div>
+                                <div class="col-9 float-sm-start">
+                                    <b>Phí giảm giá: </b>
+                                </div>
+                                <div class="col-3 float-sm-end">
+                                    <p>{{formattedGia(this.dondathang.phigiamgia)}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="col-9 float-sm-start mb-3">
+                              <h5> <b>Tổng Thanh toán: </b></h5>
+                               
+                            </div>
+                            <div class="col-3 float-sm-end text-danger mb-3">
+                               
+                                <h5><span id="tongtien">{{formattedGia(this.dondathang.tongtien)}}</span></h5>
+
+                            </div>
+                     
                         </div>
                     </div>
                 </div>
